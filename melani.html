@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Melani Yañez Navia</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <div class="menu-desplegable"
+        style="position:sticky; top:0; z-index:100; width:100%; display:flex; justify-content:flex-end; align-items:center; padding: 10px 24px 0 0; background:none; box-shadow:none;">
+        <button class="menu-boton" id="menu-boton" onclick="toggleMenu()"
+            style="background:#f67280; border:none; border-radius:50%; width:44px; height:44px; color:#fff; font-size:1.6em; cursor:pointer; box-shadow:none;"><i
+                class="fas fa-bars"></i></button>
+        <div class="menu-contenido" id="menu-contenido"
+            style="display:none; position:absolute; top:60px; right:32px; background:#fff; border-radius:14px; box-shadow:0 4px 16px rgba(0,0,0,0.12); min-width:200px; padding:18px 0;">
+            <a href="index.html" class="menu-link" onclick="cerrarMenu()"
+                style="display:flex; align-items:center; gap:12px; padding:12px 32px; color:#f67280; font-weight:bold; text-decoration:none; border-bottom:1px solid #ffe5ec;">
+                <i class="fas fa-home" style="color:#f67280;"></i> Inicio
+            </a>
+            <a href="melani.html" class="menu-link" onclick="cerrarMenu()"
+                style="display:flex; align-items:center; gap:12px; padding:12px 32px; color:#ff6f61; font-weight:bold; text-decoration:none; border-bottom:1px solid #ffe5ec;">
+                <i class="fa-solid fa-heart" style="color:#ff6f61;"></i> Melani
+            </a>
+            <a href="zamira.html" class="menu-link" onclick="cerrarMenu()"
+                style="display:flex; align-items:center; gap:12px; padding:12px 32px; color:#355c7d; font-weight:bold; text-decoration:none;">
+                <i class="fa-solid fa-star" style="color:#355c7d;"></i> Zamira
+            </a>
+        </div>
+    </div>
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById('menu-contenido');
+            menu.style.display = (menu.style.display === 'block') ? 'none' : 'block';
+        }
+        function cerrarMenu() {
+            var menu = document.getElementById('menu-contenido');
+            menu.style.display = 'none';
+        }
+        document.addEventListener('click', function (e) {
+            var menu = document.getElementById('menu-contenido');
+            var boton = document.getElementById('menu-boton');
+            if (menu.style.display === 'block' && !menu.contains(e.target) && e.target !== boton) {
+                menu.style.display = 'none';
+            }
+        });
+    </script>
+    <h1>Melani Yañez Navia <i class="fa-solid fa-heart" style="color: #e75480;"></i></h1>
+
+
+    <p>Melani likes to go to the gym, she's very strong and knows boxing. She also likes to listen to music while she
+        washes the dishes. She knows how to play the guitar, but she doesn't have a guitar.</p>
+
+
+    <p>She shows me many artists, such as: José José, Laufey, Mon Laferte, David Me Estás Matando, K-pop and many Asian
+        artists. She also calls me "Migajero", but I'm not a migajero (I'm a different person today).</p>
+
+
+    <p>We usually call each other when we have time to talk about different things, such as our lives, our problems, our
+        future, and many more things. I love her so much, she's like a sister to me.</p>
+
+
+    <p>Sometimes I behave badly with her. I usually tease her, I call her "Nusita", "Black", "Night" and other things,
+        but she doesn't care because she knows I love her very much<i class="fa-solid fa-heart"
+            style="color: #ff0000;"></i>.</p>
+
+    <h3>History</h3>
+
+
+    <p>We have an interesting history. We met in a guitar course at UAB during vacation. We didn't talk too much,
+        because I've always been a little shy. She was friendly with me and we started to talk about the guitar and
+        music.</p>
+
+    <p>After that, we started to talk more and more, we started to share our problems and our lives. We started to share
+        our music and our interests.</p>
+
+    <p>Until our performance, she gave me her Instagram and I wrote in my phone "melani navia". After the performance
+        and I went back to my house, I wrote her name on Instagram, but I couldn't find her. I had no idea which was her
+        username and the right profile. I lost her at that moment.</p>
+
+
+    <p>After one year, I went to an event and it was boring, but I saw how the governor gave cellphones and other things
+        that I wanted. I decided to move to the front and one person greeted me, I didn't know who that person was, that
+        person, I didn't remember her, but she was Melani. I was surprised, I didn't know that she was there. We started
+        to talk and we started to share our life again.</p>
+
+
+    <p>After the event ended, I asked for her instagram again. This time, she showed me her right profile and I wrote it
+        in my phone. I was so happy and we stared to talked again.</p>
+
+
+    <p>The only photo that I have with her is this one:</p>
+
+    <img src="img/photo.jpg" alt="Foto" width="300">
+
+    <p>We took this until we had a performance in the UAB, we were so nervous, but we did it.</p>
+    <p>I love you Melani, you're one of my best friends and I will always be there to support you in everything you do.
+        You know that I love you so much <i class="fa-solid fa-heart" style="color: #ff0000;"></i>.</p>
+        <p>If you are tired or sadness, you can call me and it's possible for me. I'll huge you and tell you that
+        everything is going to be okay, because I love you so much <i class="fa-solid fa-heart"
+            style="color: #ff0000;"></i>.</p> 
+</body>
+
+</html>
